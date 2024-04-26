@@ -1,0 +1,353 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Mulish", sans-serif;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__top {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__iconWrapper {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  cursor: pointer;
+}
+.header__icon {
+  font-size: 10rem;
+  color: #436850;
+  padding: 1rem;
+}
+.header__title {
+  font-size: 10rem;
+}
+.header__span {
+  color: #436850;
+}
+.header__bottom {
+  height: 85vh;
+  width: 100vw;
+  background-image: url(../img/header_forest.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  padding: 5rem;
+  display: flex;
+}
+.nav__item {
+  text-align: center;
+  font-size: 5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #436850;
+  border: 1px solid #436850;
+  margin: 3rem;
+  padding: 2rem;
+  display: block;
+  width: 500px;
+  transition: transform 0.4s, background-color 0.4s, color 0.4s;
+  box-shadow: 11px 21px 25px -18px rgba(15, 15, 15, 0.8);
+  cursor: pointer;
+}
+.nav__item:hover {
+  background-color: #436850;
+  color: #ffffff;
+}
+.nav__item:active {
+  transform: scale(0.98);
+}
+.nav__item:focus {
+  outline: none;
+  background-color: #436850;
+  color: #ffffff;
+}
+
+.segregate {
+  height: 100vh;
+  width: 70vw;
+  display: block;
+}
+.segregate__top {
+  height: 40vh;
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.segregate__icon {
+  padding: 5rem;
+  border-radius: 50%;
+  font-size: 15rem;
+  color: #436850;
+}
+.segregate__iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border: 3px solid #436850;
+  border-radius: 50%;
+  transition: background-color 0.4s, color 0.4s;
+  box-shadow: 11px 21px 25px -18px rgba(15, 15, 15, 0.8);
+  cursor: pointer;
+}
+.segregate__iconWrapper:hover {
+  background-color: #436850;
+  opacity: 0.8;
+}
+.segregate__iconWrapper:hover .segregate__icon {
+  color: #ffffff;
+}
+.segregate__bottom {
+  height: 60vh;
+  display: flex;
+}
+.segregate__table {
+  position: relative;
+  margin: 3rem;
+  width: 50%;
+  height: 80%;
+  box-shadow: 11px 21px 25px -18px rgba(15, 15, 15, 0.8);
+}
+.segregate__table--icon {
+  font-size: 30rem;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.segregate__table--front {
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #436850;
+  z-index: 1;
+  transition: opacity 0.4s;
+}
+.segregate__table--back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  padding: 3rem;
+  transition: opacity 0.4s;
+}
+.segregate__table--item {
+  padding: 1rem;
+}
+.segregate__table--list {
+  list-style: none;
+}
+
+.icon-active {
+  background-color: #436850;
+  color: #ffffff;
+}
+
+.show-back {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hide-front {
+  opacity: 0.1;
+}
+
+.search {
+  height: 30vh;
+  width: 100vw;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+}
+.search__textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20rem;
+}
+.search__inputWrapper {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem;
+}
+.search__inputField {
+  position: relative;
+}
+.search__title {
+  color: #ffffff;
+  font-size: 5rem;
+  text-transform: uppercase;
+  padding-bottom: 5rem;
+}
+.search__subtitle {
+  color: #ffffff;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+.search__span {
+  color: #436850;
+}
+.search__button {
+  width: 350px;
+  height: 80px;
+  font-size: 2.5rem;
+  border: none;
+  background-color: #436850;
+  color: #ffffff;
+  margin: 3rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.search__button:hover {
+  opacity: 0.8;
+}
+.search__button:focus {
+  outline: none;
+  opacity: 0.8;
+}
+.search__button:active {
+  transform: scale(0.98);
+}
+.search__input {
+  border: none;
+  width: 350px;
+  height: 80px;
+  background-color: #ffffff;
+  font-size: 2.5rem;
+  padding-left: 50px;
+  font-family: inherit;
+  transition: background-color 0.4s;
+}
+.search__input:focus {
+  outline: none;
+  background-color: #adbc9f;
+}
+.search__input--icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-size: 3rem;
+}
+
+.find {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 20rem;
+}
+.find__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 5vh;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.4s;
+}
+.find__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.find__title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.find__icon {
+  font-size: 5rem;
+  padding: 2rem;
+  cursor: pointer;
+  color: #436850;
+  transition: transform 0.4s, opacity 0.4s;
+}
+.find__icon:hover {
+  opacity: 0.8;
+}
+.find__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.find__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem;
+}
+.find__item--title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+.find__item--icon {
+  font-size: 9rem;
+  color: #436850;
+}
+.find__item--description {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.show-find {
+  opacity: 1;
+  display: block;
+}
+
+.rotate-find-icon {
+  transform: rotate(180deg);
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */

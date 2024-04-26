@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/288c8cccc3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon_leaf.png">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>BeEco - segreguj z nami śmieci</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="header__iconWrapper">
+                <a href="#"><i class="fa-solid fa-leaf header__icon"></i></a>
+                <p class="header__title">Be<span class="header__span">Eco</span></p>
+            </div>
+
+            <nav class="nav">
+                <a href="#segregate" class="nav__item">segregacja</a>
+                <a href="#search" class="nav__item">wyszukiwarka</a>
+                <a href="" class="nav__item">o nas</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="header__bottom">
+    </div>
+
+    <main class="main">
+        <section class="segregate" id="segregate">
+
+            <div class="segregate__top">
+                <div class="segregate__iconWrapper">
+                    <i class="fa-solid fa-bottle-water segregate__icon"></i>
+                </div>
+
+                <div class="segregate__iconWrapper">
+                    <i class="fa-solid fa-newspaper segregate__icon"></i>
+                </div>
+
+                <div class="segregate__iconWrapper">
+                    <i class="fa-solid fa-wine-bottle segregate__icon"></i>
+                </div>
+
+                <div class="segregate__iconWrapper">
+                    <i class="fa-solid fa-seedling segregate__icon"></i>
+                </div>
+
+                <div class="segregate__iconWrapper">
+                    <i class="fa-solid fa-recycle segregate__icon"></i>
+                </div>
+            </div>
+
+            <div class="segregate__bottom">
+
+                <div class="segregate__table">
+                    <div class="segregate__table--front">
+                        <i class="fa-regular fa-circle-check segregate__table--icon"></i>
+                    </div>
+                    <div class="segregate__table--back">
+                        <ul class="segregate__table--list">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="segregate__table">
+                    <div class="segregate__table--front">
+                        <i class="fa-solid fa-ban segregate__table--icon"></i>
+                    </div>
+                    <div class="segregate__table--back">
+                        <ul class="segregate__table--list"></ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="search" id="search">
+            <div class="search__textWrapper">
+                <h2 class="search__title">Wyszukaj właściwy <span class="search__span">pojemnik</span></h2>
+                <p class="search__subtitle">Nie wiesz gdzie wyrzucić dany odpad?
+                <p class="search__subtitle">Zastanawiasz się czy przed wrzucieniem go do odpowiedniego pojemnika należy
+                    go jakoś przygotować?</p>
+                <p class="search__subtitle">Co z częściami składowymi?</p>
+                <p class="search__subtitle">Czy różne elementy opakowania muszą trafić do różnych pojemników?</p>
+                <p class="search__subtitle">Jeżeli na któreś odpowiedź brzmi twierdząco, zapraszamy do skorzystania z
+                    wyszukiwarki.</p>
+                <p class="search__subtitle">Wpisz nazwę produktu. Kliknij wyszukaj i gotowe!</p>
+            </div>
+            <div class="search__inputWrapper">
+                <div class="search__inputField">
+                    <input class="search__input">
+                    <i class="fa-solid fa-magnifying-glass search__input--icon"></i>
+                </div>
+                <button class="search__button">Wyszukaj</button>
+            </div>
+        </section>
+
+        <section class="find">
+            <div class="find__top">
+                <h2 class="find__title"></h2>
+                <div class="find__list">
+
+                    <!-- <div class="find__item">
+                        <h3 class="find__item--title">Butelka plastikowa</h3>
+                        <div class="find__item--listOfIcons">
+                            <i class="fa-solid fa-bottle-water find__item--icon"></i>
+                        </div>
+                        <p class="find__item--description">Butelkę należy zgnieść i wrzucić bezpośednio do pojemnika na
+                            plasik. Nakrętki można odkręcić od butelki, jeżeli są zbierane osobno. Jednakże nie jest to
+                            konieczne.</p>
+                    </div> -->
+
+
+                </div>
+            </div>
+            <div class="find__bottom">
+                <i class="fa-solid fa-chevron-down find__icon"></i>
+            </div>
+        </section>
+
+    </main>
+    <script src="./js/search.js" type="module"></script>
+    <script src=" ./js/script.js" type="module"></script>
+</body>
+
+</html>
+<!-- 
+<div class="segregate__bottom--left">
+    <div class="segregate__table">
+        <i class="fa-regular fa-square-check segregate__table--icon"></i>
+    </div>
+</div>
+<div class="segregate__bottom--right table-active">
+    <div class="segregate__table ">
+        <i class="fa-solid fa-ban segregate__table--icon"></i>
+        <p class="test">test</p>
+    </div>
+</div> -->
+
+<!-- <div class="find__item">
+    <h3 class="find__item--title">Butelka plastikowa</h3>
+    <div class="find__item--listOfIcons">
+        <i class="fa-solid fa-bottle-water find__item--icon"></i>
+    </div>
+    <p class="find__item--description">Butelkę należy zgnieść i wrzucić bezpośednio do pojemnika na
+        plasik. Nakrętki można odkręcić od butelki, jeżeli są zbierane osobno. Jednakże nie jest to
+        konieczne.</p>
+</div> -->
